@@ -155,24 +155,27 @@ section{
     color: black;
 }
 .card{
-    width: 40rem;
+    width: 50%;
+    height: 30%;
     display: flex;
     align-items: center;
     margin-inline: auto;
 }
 .card-img{
-    height: 280px;
-    width: 1200px;
+    height: 80%;
+    width: 100%;
 }
 .btn{
-    padding: 0;
-    height: 2rem;
+    height: 3rem;
     width: 8rem;
     align-items: center;
     text-align: center;
 }
 .btn-primary{
+    padding-top: .5rem;
     background-color: black;
+    border-color: black;
+    text-align: center;
 }
 /* CONTACTO */
 .contacto{
@@ -257,12 +260,12 @@ section{
     margin: 0 auto 30px;
 }
 .grid{
-    padding: 4rem 2rem 0 2rem;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
     grid-template-areas: 
-    "item1  item2  item3" ;
+    "item1  item2 "
+    "item3  item4";
 }
 .grid-item1{
     grid-area: item1;
@@ -273,25 +276,28 @@ section{
 .grid-item3{
     grid-area: item3;
 }
+.grid-item4{
+    grid-area: item4;
+}
 .grid-image{
+    margin-top: 3rem;
     height: 400px;
-    width: 300px;
+    width: 330px;
     border-radius: 3%;
-    margin-inline: 2rem;
 }
 .grid-titulo{
-    max-width: 85%;
+    max-width: 50%;
     text-align: center;
     letter-spacing: 1px;
-    margin: 12px auto 10px;
-    line-height: 1;
+    line-height:1.5;
+    margin: 4px auto 10px;
 }
 .grid-sub{
-    max-width: 80%;
+    max-width: 50%;
     font-size: 16px;
     text-align: center;
     letter-spacing: .5px;
-    margin: 12px auto 10px;
+    margin: 4px auto 10px;
 }
 .link-grid{
     color: black;
@@ -319,12 +325,39 @@ section{
         flex-direction: column;
         font-size: 15px;
     }
+    .grid{
+        padding: 2rem 2rem 0 2rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "item1"
+        "item2" 
+        "item3" ;
+    }
+    .grid-image{
+        height: 250px;
+        width: 200px;
+    }
+    .grid-titulo{
+        font-size: 16px;
+        max-width: 50%;
+    }
+    .grid-sub{
+        max-width: 45%;
+        font-size: 12px;
+        margin: 12px auto 10px;
+        padding-bottom: 1.5rem;
+    }
 }
 @media screen and (max-width: 480px) {
     /* INICIO */
     .header{
         flex-direction: column;
         font-size: 13px;
+    }
+    .nav{
+        justify-content: center;
     }
     .hero-titulo{
         font-size: 19px;
@@ -337,7 +370,7 @@ section{
         font-size: 16px;
     }
     p{
-        font-size: 11px;
+        font-size: 14px;
         margin-inline: 1rem;
     }
     /* MODA */
@@ -385,14 +418,14 @@ section{
         width: 8.5rem;
     }
     .grid{
-        padding: 2rem 2rem 0 2rem;
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
         grid-template-areas: 
         "item1"
         "item2" 
-        "item3" ;
+        "item3"
+        "item4" ;
     }
     .grid-image{
         height: 250px;
