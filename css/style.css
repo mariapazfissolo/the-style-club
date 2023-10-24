@@ -151,7 +151,7 @@ section{
     border-bottom: 1px solid black;
     margin: 0 auto 30px;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: rem;
     color: black;
 }
 .card{
@@ -473,5 +473,14 @@ section{
         height: 2rem;
         width: 10rem;
         padding-bottom: 1.5rem;
+    }
+    /* VIAJES */
+    .viajes-titulo{
+        font-size: 19px;
+        width: 7rem;
+        padding-bottom: 10px;
+    }
+    .card{
+        width: 70%;
     }
 }
