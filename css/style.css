@@ -41,19 +41,16 @@
     background-color: #EBEBD3;
     border-radius: 100%;
 }
-
 /* BODY */
-.hero-titulo{
+.bienvenidos{
+    display: block;
     text-align: center;
-    font-weight: 300px;
-    text-decoration: dashed;
-    padding: .5rem 0rem .5rem;
-    padding-bottom: 1rem;
 }
-.hero-conteiner{
-    text-align: center;
-    font-size: 16px;
-    margin-inline: 1rem;
+.bienvenidos-titulo{
+    padding-bottom: 20px;
+    width: 29rem;
+    border-bottom: 1px solid black;
+    margin: 0 auto 30px;
 }
 .galeria{
     padding-block: 1rem;
@@ -88,7 +85,6 @@ section{
 .texto{
     text-align: left;
 }
-
 /* MODA */
 .moda{
     display: block;
@@ -359,12 +355,10 @@ section{
     .nav{
         justify-content: center;
     }
-    .hero-titulo{
+    .bienvenidos-titulo{
         font-size: 19px;
-    }
-    .hero-conteiner{
-        font-size: 10px;
-        margin-inline: 2rem;
+        width: 17rem;
+        padding-bottom: 19px;
     }
     .galeria-title{
         font-size: 16px;
