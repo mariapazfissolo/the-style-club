@@ -47,8 +47,7 @@
   display: block;
   text-align: center;
 }
-
-.bienvenidos-titulo {
+.bienvenidos .bienvenidos-titulo {
   padding-bottom: 20px;
   width: 29rem;
   border-bottom: 1px solid black;
@@ -60,26 +59,25 @@
   text-align: center;
   margin-inline: 1rem;
 }
-
-.galeria-title {
+.galeria .galeria-title {
   text-align: center;
   margin-bottom: 1rem;
   padding: 1rem;
 }
-
-.galeria-container {
+.galeria .texto {
+  text-align: left;
+}
+.galeria .galeria-container {
   display: flex;
   max-width: 1000px;
   margin-inline: auto;
   gap: 1rem;
 }
-
-.galeria-foto {
+.galeria .galeria-container .galeria-foto {
   height: 100%;
   width: 100%;
 }
-
-.galeria-foto img {
+.galeria .galeria-container .galeria-foto .galeria-foto img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
@@ -92,42 +90,34 @@ section {
   padding-inline: 1rem;
 }
 
-.texto {
-  text-align: left;
-}
-
 /* MODA */
 .moda {
   display: block;
   text-align: center;
 }
-
-.moda-titulo {
+.moda .moda-titulo {
   padding-bottom: 20px;
   width: 10rem;
   border-bottom: 1px solid black;
   margin: 0 auto 30px;
 }
 
-.pint1 {
+.pinterest-moda .pinterest-moda-post .pint1 {
   padding-top: 2rem;
   height: 449px;
   width: 200px;
 }
-
-.pint2 {
+.pinterest-moda .pinterest-moda-post .pint2 {
   padding-top: 2rem;
   height: 449px;
   width: 200px;
 }
-
-.pint3 {
+.pinterest-moda .pinterest-moda-post .pint3 {
   padding-top: 2rem;
   height: 449px;
   width: 200px;
 }
-
-.pint4 {
+.pinterest-moda .pinterest-moda-post .pint4 {
   padding-top: 2rem;
   height: 449px;
   width: 200px;
@@ -138,8 +128,7 @@ section {
   display: block;
   text-align: center;
 }
-
-.tendencias-titulo {
+.tendencias .tendencias-titulo {
   padding-bottom: 20px;
   width: 10rem;
   border-bottom: 1px solid black;
@@ -149,8 +138,7 @@ section {
 .tendencias-list {
   text-align: left;
 }
-
-.tendencias-items {
+.tendencias-list .tendencias-items {
   margin-left: 2rem;
 }
 
@@ -163,8 +151,7 @@ section {
   display: block;
   text-align: center;
 }
-
-.viajes-titulo {
+.viajes .viajes-titulo {
   padding-bottom: 20px;
   width: 10rem;
   border-bottom: 1px solid black;
@@ -181,20 +168,17 @@ section {
   align-items: center;
   margin-inline: auto;
 }
-
-.card-img {
+.card .card-img {
   height: 80%;
   width: 100%;
 }
-
-.btn {
+.card .btn {
   height: 3rem;
   width: 8rem;
   align-items: center;
   text-align: center;
 }
-
-.btn-primary {
+.card .btn .btn-primary {
   padding-top: 0.5rem;
   background-color: black;
   border-color: black;
@@ -206,8 +190,7 @@ section {
   display: block;
   text-align: center;
 }
-
-.contacto-titulo {
+.contacto .contacto-titulo {
   padding-bottom: 20px;
   width: 10rem;
   border-bottom: 1px solid black;
@@ -217,12 +200,10 @@ section {
 .formulario {
   padding-top: 2rem;
 }
-
-.casilla {
+.formulario .formulario-contacto .formulario.contacto-casillas .casilla {
   padding-bottom: 0.5rem;
 }
-
-.nombre {
+.formulario .formulario-contacto .formulario.contacto-casillas .casilla .nombre {
   height: 3rem;
   width: 30rem;
   padding: 1rem;
@@ -231,8 +212,7 @@ section {
   border-color: black;
   border-radius: 2rem;
 }
-
-.email {
+.formulario .formulario-contacto .formulario.contacto-casillas .casilla .email {
   padding: 1rem;
   height: 3rem;
   width: 30rem;
@@ -241,8 +221,7 @@ section {
   border-color: black;
   border-radius: 2rem;
 }
-
-.telefono {
+.formulario .formulario-contacto .formulario.contacto-casillas .casilla .telefono {
   padding: 1rem;
   height: 3rem;
   width: 30rem;
@@ -251,8 +230,7 @@ section {
   border-color: black;
   border-radius: 2rem;
 }
-
-.text-area {
+.formulario .formulario-contacto .formulario.contacto-casillas .casilla-texto .text-area {
   padding: 1rem;
   height: 10rem;
   width: 30rem;
@@ -261,8 +239,7 @@ section {
   border-color: black;
   border-radius: 2rem;
 }
-
-.boton-enviar {
+.formulario .formulario-contacto .formulario.contacto-casillas .botones .boton-enviar {
   padding: 0.5rem;
   height: 3rem;
   width: 15rem;
@@ -271,8 +248,7 @@ section {
   border-color: black;
   border-radius: 2rem;
 }
-
-.boton-borrar {
+.formulario .formulario-contacto .formulario.contacto-casillas .botones .boton-borrar {
   padding: 0.5rem;
   height: 3rem;
   width: 15rem;
@@ -287,8 +263,7 @@ section {
   display: block;
   text-align: center;
 }
-
-.lifestyle-titulo {
+.lifestyle .lifestyle-titulo {
   padding-bottom: 20px;
   width: 10rem;
   border-bottom: 1px solid black;
@@ -301,49 +276,41 @@ section {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "item1  item2 " "item3  item4";
 }
-
-.grid-item1 {
+.grid .grid-item .grid-item1 {
   grid-area: item1;
 }
-
-.grid-item2 {
+.grid .grid-item .grid-item2 {
   grid-area: item2;
 }
-
-.grid-item3 {
+.grid .grid-item .grid-item3 {
   grid-area: item3;
 }
-
-.grid-item4 {
+.grid .grid-item .grid-item4 {
   grid-area: item4;
 }
-
-.grid-image {
+.grid .grid-item .link-grid {
+  color: black;
+  text-decoration: none;
+}
+.grid .grid-item .grid-image {
   margin-top: 3rem;
   height: 400px;
   width: 330px;
   border-radius: 3%;
 }
-
-.grid-titulo {
+.grid .grid-item .grid-titulo {
   max-width: 50%;
   text-align: center;
   letter-spacing: 1px;
   line-height: 1.5;
   margin: 4px auto 10px;
 }
-
-.grid-sub {
+.grid .grid-item .grid-sub {
   max-width: 50%;
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.5px;
   margin: 4px auto 10px;
-}
-
-.link-grid {
-  color: black;
-  text-decoration: none;
 }
 
 /* FOOTER GENERAL */
@@ -354,13 +321,11 @@ section {
   padding-block: 2rem;
   gap: 1rem;
 }
-
-.footer-icons {
+.footer .footer-icons {
   display: flex;
   gap: 1rem;
 }
-
-.footer-icons a {
+.footer .footer-icons .footer-icons a {
   color: black;
   font-size: 1.5rem;
 }
@@ -377,15 +342,15 @@ section {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "item1" "item2" "item3";
   }
-  .grid-image {
+  .grid .grid-image {
     height: 250px;
     width: 200px;
   }
-  .grid-titulo {
+  .grid .grid-titulo {
     font-size: 16px;
     max-width: 50%;
   }
-  .grid-sub {
+  .grid .grid-sub {
     max-width: 45%;
     font-size: 12px;
     margin: 12px auto 10px;
@@ -398,7 +363,7 @@ section {
     flex-direction: column;
     font-size: 13px;
   }
-  .nav {
+  .header .nav {
     justify-content: center;
   }
   .bienvenidos-titulo {
@@ -406,53 +371,53 @@ section {
     width: 17rem;
     padding-bottom: 19px;
   }
-  .galeria-title {
-    font-size: 16px;
-  }
-  p {
+  .bienvenidos-titulo p {
     font-size: 14px;
     margin-inline: 1rem;
   }
+  .galeria .galeria-title {
+    font-size: 16px;
+  }
   /* MODA */
-  .moda-titulo {
+  .moda .moda-titulo {
     font-size: 19px;
     width: 7rem;
     padding-bottom: 10px;
   }
-  .galeria-title {
+  .galeria .galeria-title {
     font-size: 16px;
   }
-  .pint1 {
+  .pinterest-moda .pinterest-moda-post .pint1 {
     padding-top: 1rem;
     height: 380px;
     width: 160px;
   }
-  .pint2 {
+  .pinterest-moda .pinterest-moda-post .pint2 {
     padding-top: 1rem;
     height: 380px;
     width: 160px;
   }
-  .pint3 {
+  .pinterest-moda .pinterest-moda-post .pint3 {
     padding-top: 1rem;
     height: 380px;
     width: 160px;
   }
-  .pint4 {
+  .pinterest-moda .pinterest-moda-post .pint4 {
     padding-top: 1rem;
     height: 380px;
     width: 160px;
   }
   /* TENDENCIAS */
-  .tendencias-titulo {
+  .tendencias .tendencias-titulo {
     font-size: 19px;
     width: 10rem;
     padding-bottom: 10px;
   }
-  .style-club {
+  .texto .style-club {
     padding-top: 1rem;
   }
   /* LIFESTYLE */
-  .lifestyle-titulo {
+  .lifestyle .lifestyle-titulo {
     font-size: 19px;
     padding-bottom: 10px;
     width: 8.5rem;
@@ -463,54 +428,54 @@ section {
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "item1" "item2" "item3" "item4";
   }
-  .grid-image {
+  .grid .grid-image {
     height: 250px;
     width: 200px;
   }
-  .grid-titulo {
+  .grid .grid-titulo {
     font-size: 16px;
     max-width: 50%;
   }
-  .grid-sub {
+  .grid .grid-sub {
     max-width: 45%;
     font-size: 12px;
     margin: 12px auto 10px;
     padding-bottom: 1.5rem;
   }
   /* CONTACTO */
-  .contacto-titulo {
+  .contacto .contacto-titulo {
     font-size: 19px;
     padding-bottom: 10px;
     width: 9rem;
   }
-  .nombre {
+  .casilla .nombre {
     height: 2rem;
     width: 20rem;
   }
-  .email {
+  .casilla .email {
     height: 2rem;
     width: 20rem;
   }
-  .telefono {
+  .casilla .telefono {
     height: 2rem;
     width: 20rem;
   }
-  .text-area {
+  .casilla-texto .text-area {
     height: 8rem;
     width: 20rem;
   }
-  .boton-enviar {
+  .botones .boton-enviar {
     padding-bottom: 1.5rem;
     height: 2rem;
     width: 10rem;
   }
-  .boton-borrar {
+  .botones .boton-borrar {
     height: 2rem;
     width: 10rem;
     padding-bottom: 1.5rem;
   }
   /* VIAJES */
-  .viajes-titulo {
+  .viajes .viajes-titulo {
     font-size: 19px;
     width: 7rem;
     padding-bottom: 10px;
