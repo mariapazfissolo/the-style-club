@@ -46,7 +46,7 @@
 }
 .bienvenidos .bienvenidos-titulo {
   padding-bottom: 20px;
-  width: 29rem;
+  width: 22rem;
   border-bottom: 1px solid black;
   margin: 0 auto 30px;
 }
@@ -424,12 +424,12 @@ section {
   .header .nav {
     justify-content: center;
   }
-  .bienvenidos-titulo {
+  .bienvenidos .bienvenidos-titulo {
     font-size: 19px;
-    width: 17rem;
+    width: 15rem;
     padding-bottom: 19px;
   }
-  .bienvenidos-titulo p {
+  .bienvenidos .bienvenidos-titulo p {
     font-size: 14px;
     margin-inline: 1rem;
   }
@@ -509,28 +509,28 @@ section {
     padding-bottom: 10px;
     width: 9rem;
   }
-  .casilla .nombre {
+  .formulario .formulario-contacto .casilla .nombre {
     height: 2rem;
-    width: 20rem;
+    width: 23rem;
   }
-  .casilla .email {
+  .formulario .formulario-contacto .casilla .email {
     height: 2rem;
-    width: 20rem;
+    width: 23rem;
   }
-  .casilla .telefono {
+  .formulario .formulario-contacto .casilla .telefono {
     height: 2rem;
-    width: 20rem;
+    width: 23rem;
   }
-  .casilla-texto .text-area {
+  .formulario .formulario-contacto .casilla-texto .text-area {
     height: 8rem;
-    width: 20rem;
+    width: 23rem;
   }
-  .botones .boton-enviar {
+  .formulario .formulario-contacto .botones .boton-enviar {
     padding-bottom: 1.5rem;
     height: 2rem;
     width: 10rem;
   }
-  .botones .boton-borrar {
+  .formulario .formulario-contacto .botones .boton-borrar {
     height: 2rem;
     width: 10rem;
     padding-bottom: 1.5rem;

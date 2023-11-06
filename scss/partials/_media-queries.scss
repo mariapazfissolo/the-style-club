@@ -39,14 +39,16 @@
             justify-content: center;
         }
     }
-    .bienvenidos-titulo{
-        font-size: 19px;
-        width: 17rem;
-        padding-bottom: 19px;
-
-        p{
-            font-size: 14px;
-            margin-inline: 1rem;
+    .bienvenidos{
+        .bienvenidos-titulo{
+            font-size: 19px;
+            width: 15rem;
+            padding-bottom: 19px;
+            
+            p{
+                font-size: 14px;
+                margin-inline: 1rem;
+            }
         }
     }
     .galeria{
@@ -151,39 +153,43 @@
             width: 9rem;
         }
     }
-    .casilla{
-        .nombre{
-            height: 2rem;
-            width: 20rem;
-        }
-        .email{
-            height: 2rem;
-            width: 20rem;
-        }
-        .telefono{
-            height: 2rem;
-            width: 20rem;
+    
+    .formulario{
+        .formulario-contacto{
+            .casilla{
+                .nombre{
+                    height: 2rem;
+                    width: 23rem;
+                }
+                .email{
+                    height: 2rem;
+                    width: 23rem;
+                }
+                .telefono{
+                    height: 2rem;
+                    width: 23rem;
+                }
+            }
+            .casilla-texto{
+                .text-area{
+                    height: 8rem;
+                    width: 23rem;
+                }
+            }
+            .botones{
+                .boton-enviar{
+                    padding-bottom: 1.5rem;
+                    height: 2rem;
+                    width: 10rem;
+                }
+                .boton-borrar{
+                    height: 2rem;
+                    width: 10rem;
+                    padding-bottom: 1.5rem;
+                }
+            }
         }
     }
-    .casilla-texto{
-         .text-area{
-            height: 8rem;
-            width: 20rem;
-        }
-    }
-    .botones{
-         .boton-enviar{
-            padding-bottom: 1.5rem;
-            height: 2rem;
-            width: 10rem;
-        }
-        .boton-borrar{
-            height: 2rem;
-            width: 10rem;
-            padding-bottom: 1.5rem;
-        }
-    }
-   
     /* VIAJES */
     .viajes{
         .viajes-titulo{
