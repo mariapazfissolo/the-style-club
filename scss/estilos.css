@@ -135,13 +135,13 @@
   height: 100%;
   width: 100%;
 }
-.galeria .galeria-container .galeria-foto .galeria-foto img {
+.galeria .galeria-container .galeria-foto img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.galeria .galeria-container .galeria-foto .galeria-foto:hover {
+.galeria .galeria-container .galeria-foto:hover {
   transition: 1s;
   transform: scale(1.3, 1.3) translateY(-30px);
 }
@@ -178,9 +178,22 @@ section {
   margin-inline: auto;
   gap: 1rem;
 }
-.galeria2 .texto2 {
+.galeria2 .galeria-foto {
+  height: 100%;
+  width: 100%;
+}
+.galeria2 .galeria-foto img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.galeria2 .galeria-foto:hover {
+  transition: 1s;
+  transform: scale(1.3, 1.3) translateY(-30px);
+}
+.galeria2 p {
   text-align: left;
-  padding-top: 0.3rem;
 }
 
 .pinterest-moda .pinterest-moda-post .pint1 {
@@ -245,52 +258,52 @@ section {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "item1  item2 " "item3  item4";
 }
-.grid .grid-item .grid-item1 {
+.grid .grid-item1 {
   grid-area: item1;
 }
-.grid .grid-item .grid-item1 .grid-item1:hover {
+.grid .grid-item1:hover {
   transition: transform 1s;
   transform: scale(1, 1) translateY(-30px);
 }
-.grid .grid-item .grid-item2 {
+.grid .grid-item2 {
   grid-area: item2;
 }
-.grid .grid-item .grid-item2 .grid-item2:hover {
+.grid .grid-item2:hover {
   transition: transform 1s;
   transform: scale(1, 1) translateY(-30px);
 }
-.grid .grid-item .grid-item3 {
+.grid .grid-item3 {
   grid-area: item3;
 }
-.grid .grid-item .grid-item3 .grid-item3:hover {
+.grid .grid-item3:hover {
   transition: transform 1s;
   transform: scale(1, 1) translateY(-30px);
 }
-.grid .grid-item .grid-item4 {
+.grid .grid-item4 {
   grid-area: item4;
 }
-.grid .grid-item .grid-item4 .grid-item4:hover {
+.grid .grid-item4:hover {
   transition: transform 1s;
   transform: scale(1, 1) translateY(-30px);
 }
-.grid .grid-item .link-grid {
+.grid .link-grid {
   color: black;
   text-decoration: none;
 }
-.grid .grid-item .grid-image {
+.grid .grid-image {
   margin-top: 3rem;
   height: 400px;
   width: 330px;
   border-radius: 3%;
 }
-.grid .grid-item .grid-titulo {
+.grid .grid-titulo {
   max-width: 50%;
   text-align: center;
   letter-spacing: 1px;
   line-height: 1.5;
   margin: 4px auto 10px;
 }
-.grid .grid-item .grid-sub {
+.grid .grid-sub {
   max-width: 50%;
   font-size: 16px;
   text-align: center;
@@ -301,10 +314,10 @@ section {
 .formulario {
   padding-top: 2rem;
 }
-.formulario .formulario-contacto .formulario.contacto-casillas .casilla {
+.formulario .formulario-contacto .casilla {
   padding-bottom: 0.5rem;
 }
-.formulario .formulario-contacto .formulario.contacto-casillas .casilla .nombre {
+.formulario .formulario-contacto .casilla .nombre {
   height: 3rem;
   width: 30rem;
   padding: 1rem;
@@ -313,7 +326,7 @@ section {
   border-color: black;
   border-radius: 2rem;
 }
-.formulario .formulario-contacto .formulario.contacto-casillas .casilla .email {
+.formulario .formulario-contacto .casilla .email {
   padding: 1rem;
   height: 3rem;
   width: 30rem;
@@ -322,7 +335,7 @@ section {
   border-color: black;
   border-radius: 2rem;
 }
-.formulario .formulario-contacto .formulario.contacto-casillas .casilla .telefono {
+.formulario .formulario-contacto .casilla .telefono {
   padding: 1rem;
   height: 3rem;
   width: 30rem;
@@ -331,7 +344,7 @@ section {
   border-color: black;
   border-radius: 2rem;
 }
-.formulario .formulario-contacto .formulario.contacto-casillas .casilla-texto .text-area {
+.formulario .formulario-contacto .casilla-texto .text-area {
   padding: 1rem;
   height: 10rem;
   width: 30rem;
@@ -340,7 +353,7 @@ section {
   border-color: black;
   border-radius: 2rem;
 }
-.formulario .formulario-contacto .formulario.contacto-casillas .botones .boton-enviar {
+.formulario .formulario-contacto .botones .boton-enviar {
   padding: 0.5rem;
   height: 3rem;
   width: 15rem;
@@ -349,7 +362,7 @@ section {
   border-color: black;
   border-radius: 2rem;
 }
-.formulario .formulario-contacto .formulario.contacto-casillas .botones .boton-borrar {
+.formulario .formulario-contacto .botones .boton-borrar {
   padding: 0.5rem;
   height: 3rem;
   width: 15rem;
