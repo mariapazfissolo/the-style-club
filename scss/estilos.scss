@@ -1,3 +1,5 @@
+$colorPrincipal: black;
+$colorSecundario:#EBEBD3;
 @font-face {
     font-family:"Poppins";
     src: url(../fonts/Poppins-ExtraLight.ttf);
@@ -16,7 +18,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem 3rem;
-        color: black;
+        color: $colorPrincipal;
 
         .logo{
             display: flex;
@@ -30,16 +32,18 @@
             list-style-type: none;
             display: flex;
             gap: 1rem;
-            color: black;
+            color: $colorPrincipal;
 
-            .menu-item:hover{
-                background-color: #EBEBD3;border-radius: 100%;
-                
-                .menu-link{
-                    color: black;
-                    text-decoration: none;
+            .menu-item{
+                &:hover{
+                    background-color: $colorSecundario;
+                    border-radius: 100%;
                 }
             }
+            .menu-link{
+                color: $colorPrincipal;
+                text-decoration: none;
+            }  
         }
     }
 }
@@ -109,7 +113,7 @@ section{
         .pint1{
             padding-top: 2rem;
             height: 449px;
-            width: 200px;
+            width: 100px * 2;
         }
         .pint2{
             padding-top: 2rem;
@@ -138,6 +142,43 @@ section{
         width: 10rem;
         border-bottom: 1px solid black;
         margin: 0 auto 30px;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: black;
+    }
+}
+.galeria2{
+    padding-block: 1rem;
+    text-align: center;
+
+    .galeria-title2{
+        text-align: center;
+        margin-bottom:1rem;
+        font-size: 24px;
+    }
+    .galeria-container2{
+        display: flex;
+        max-width: 1000px;
+        margin-inline: auto;
+        gap: 1rem;
+    }
+    .texto2{
+        text-align: left;
+        padding-top: .3rem;
+    }
+}
+.carousel{
+    .carousel-inner{
+        height: 100%;
+        width: 100%;
+        
+        .carousel-item{
+            text-align: center;
+            
+            .carousel-img{
+                align-items: center;
+            }
+        }
     }
 }
 .tendencias-list{
@@ -459,7 +500,11 @@ section{
             padding-top: 1rem;
         }  
     }
-   
+    .galeria2{
+        .galeria-title2{
+            font-size: 18px;
+        }
+    }
     /* LIFESTYLE */
     .lifestyle{
          .lifestyle-titulo{

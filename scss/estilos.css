@@ -37,7 +37,7 @@
   background-color: #EBEBD3;
   border-radius: 100%;
 }
-.hero .header .menu .menu-item:hover .menu-link {
+.hero .header .menu .menu-link {
   color: black;
   text-decoration: none;
 }
@@ -133,6 +133,40 @@ section {
   width: 10rem;
   border-bottom: 1px solid black;
   margin: 0 auto 30px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: black;
+}
+
+.galeria2 {
+  padding-block: 1rem;
+  text-align: center;
+}
+.galeria2 .galeria-title2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+.galeria2 .galeria-container2 {
+  display: flex;
+  max-width: 1000px;
+  margin-inline: auto;
+  gap: 1rem;
+}
+.galeria2 .texto2 {
+  text-align: left;
+  padding-top: 0.3rem;
+}
+
+.carousel .carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+.carousel .carousel-inner .carousel-item {
+  text-align: center;
+}
+.carousel .carousel-inner .carousel-item .carousel-img {
+  align-items: center;
 }
 
 .tendencias-list {
@@ -415,6 +449,9 @@ section {
   }
   .texto .style-club {
     padding-top: 1rem;
+  }
+  .galeria2 .galeria-title2 {
+    font-size: 18px;
   }
   /* LIFESTYLE */
   .lifestyle .lifestyle-titulo {

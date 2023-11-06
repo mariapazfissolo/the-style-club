@@ -126,6 +126,28 @@ section{
     width: 10rem;
     border-bottom: 1px solid black;
     margin: 0 auto 30px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: black;
+}
+.galeria2{
+    padding-block: 1rem;
+    text-align: center;
+}
+.galeria-title2{
+    text-align: center;
+    margin-bottom:1rem;
+    font-size: 24px;
+}
+.galeria-container2{
+    display: flex;
+    max-width: 1000px;
+    margin-inline: auto;
+    gap: 1rem;
+}
+.texto2{
+    text-align: left;
+    padding-top: .3rem;
 }
 .tendencias-list{
     text-align: left;
@@ -135,6 +157,16 @@ section{
 }
 .style-club{
     padding-top: 1rem;
+}
+.carousel-inner{
+    height: 100%;
+    width: 100%;
+}
+.carousel-item{
+    text-align: center;
+}
+.carousel-img{
+    align-items: center;
 }
 /* VIAJES */
 .viajes{
@@ -147,7 +179,7 @@ section{
     border-bottom: 1px solid black;
     margin: 0 auto 30px;
     font-weight: bold;
-    font-size: rem;
+    font-size: 1.8rem;
     color: black;
 }
 .card{
@@ -404,6 +436,9 @@ section{
     }
     .style-club{
         padding-top: 1rem;
+    }
+    .galeria-title2{
+        font-size: 18px;
     }
     /* LIFESTYLE */
     .lifestyle-titulo{
