@@ -1,35 +1,33 @@
-.hero{
-    .header{
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    color: $colorPrincipal;
+
+    .logo{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 3rem;
+        justify-content: left;
+    }
+    .nav{
+        display: flex;
+        justify-content: right;
+    }
+    .menu{
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
         color: $colorPrincipal;
 
-        .logo{
-            display: flex;
-            justify-content: left;
-        }
-        .nav{
-            display: flex;
-            justify-content: right;
-        }
-        .menu{
-            list-style-type: none;
-            display: flex;
-            gap: 1rem;
-            color: $colorPrincipal;
-
-            .menu-item{
-                &:hover{
-                    background-color: $colorSecundario;
-                    border-radius: 100%;
-                }
+        .menu-item{
+             &:hover{
+                background-color: $colorSecundario;
+                border-radius: 100%;
             }
-            .menu-link{
-                color: $colorPrincipal;
-                text-decoration: none;
-            }  
-        }
+         }
+        .menu-link{
+            color: $colorPrincipal;
+            text-decoration: none;
+        }  
     }
 }
