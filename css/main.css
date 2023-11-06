@@ -77,6 +77,10 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+.galeria-foto:hover{
+    transition: 1s;
+    transform: scale(1.3,1.3) translateY(-30px);
+}
 section{
     text-align: center;
     font-size: 18px;
@@ -298,14 +302,30 @@ section{
 .grid-item1{
     grid-area: item1;
 }
+.grid-item1:hover{
+    transition: transform 1s;
+    transform: scale(1,1) translateY(-30px);
+}
 .grid-item2{
     grid-area: item2;
+}
+.grid-item2:hover{  
+    transition: transform 1s;
+    transform: scale(1,1) translateY(-30px);
 }
 .grid-item3{
     grid-area: item3;
 }
+.grid-item3:hover{
+    transition: transform 1s;
+    transform: scale(1,1) translateY(-30px);
+}
 .grid-item4{
     grid-area: item4;
+}
+.grid-item4:hover{
+    transition: transform 1s;
+    transform: scale(1,1) translateY(-30px);
 }
 .grid-image{
     margin-top: 3rem;

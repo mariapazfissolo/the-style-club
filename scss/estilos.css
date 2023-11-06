@@ -83,6 +83,10 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.galeria .galeria-container .galeria-foto .galeria-foto:hover {
+  transition: 1s;
+  transform: scale(1.3, 1.3) translateY(-30px);
+}
 
 section {
   text-align: center;
@@ -313,14 +317,30 @@ section {
 .grid .grid-item .grid-item1 {
   grid-area: item1;
 }
+.grid .grid-item .grid-item1 .grid-item1:hover {
+  transition: transform 1s;
+  transform: scale(1, 1) translateY(-30px);
+}
 .grid .grid-item .grid-item2 {
   grid-area: item2;
+}
+.grid .grid-item .grid-item2 .grid-item2:hover {
+  transition: transform 1s;
+  transform: scale(1, 1) translateY(-30px);
 }
 .grid .grid-item .grid-item3 {
   grid-area: item3;
 }
+.grid .grid-item .grid-item3 .grid-item3:hover {
+  transition: transform 1s;
+  transform: scale(1, 1) translateY(-30px);
+}
 .grid .grid-item .grid-item4 {
   grid-area: item4;
+}
+.grid .grid-item .grid-item4 .grid-item4:hover {
+  transition: transform 1s;
+  transform: scale(1, 1) translateY(-30px);
 }
 .grid .grid-item .link-grid {
   color: black;
